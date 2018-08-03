@@ -17,7 +17,6 @@
 
 !---------403/451/520 & URL Redirects---------
 !--ehentai
-|http://www.netspeeder.xyz
 |http://85.17.73.31/
 !--||adorama.com
 ||agnesb.fr
