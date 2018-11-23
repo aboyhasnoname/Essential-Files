@@ -28,7 +28,7 @@ ENCRYPTFLG=false
 BACKUPPASS="mypassword"
 
 # Directory to store backups
-LOCALDIR="/home/backups"
+LOCALDIR="/home/backups/"
 
 # Temporary directory used during backup creation
 TEMPDIR="/home/backups/temp/"
