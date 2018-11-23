@@ -47,7 +47,7 @@ MYSQL_DATABASE_NAME[0]="sspanel"
 # For example:
 # File: /data/www/default/test.tgz
 # Directory: /data/www/default/test
-BACKUP[0]="/data/wwwroot/netspeeder.xyz/"
+BACKUP[0]="/data/wwwroot/"
 
 # Number of days to store daily local backups (default 7 days)
 LOCALAGEDAILIES="21"
