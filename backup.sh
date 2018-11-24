@@ -14,6 +14,12 @@
 # Auto delete Google Drive's or FTP server's remote file (option)
 #
 
+# fix
+###################
+. /etc/profile
+. ~/.bash_profile
+##################
+
 [[ $EUID -ne 0 ]] && echo "Error: This script must be run as root!" && exit 1
 
 ########## START OF CONFIG ##########
