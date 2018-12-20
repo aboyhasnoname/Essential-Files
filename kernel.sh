@@ -273,20 +273,6 @@ reboot_os() {
 }
 
 install_bbr() {
-    check_bbr_status
-    if [ $? -eq 0 ]; then
-        echo
-        echo -e "${green}Info:${plain} TCP BBR has already been installed. nothing to do..."
-        exit 0
-    fi
-    check_kernel_version
-    if [ $? -eq 0 ]; then
-        echo
-        echo -e "${green}Info:${plain} Your kernel version is greater than 4.9, directly setting TCP BBR..."
-        sysctl_config
-        echo -e "${green}Info:${plain} Setting TCP BBR completed..."
-        exit 0
-    fi
 
     if [[ x"${release}" == x"centos" ]]; then
         install_elrepo
