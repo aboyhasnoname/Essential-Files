@@ -196,7 +196,7 @@ centosversion() {
 check_bbr_status() {
     local param=$(sysctl net.ipv4.tcp_congestion_control | awk '{print $3}')
     if [[ x"${param}" == x"bbr" ]]; then
-        return 0
+        return 1
     else
         return 1
     fi
@@ -205,7 +205,7 @@ check_bbr_status() {
 check_kernel_version() {
     local kernel_version=$(uname -r | cut -d- -f1)
     if version_ge ${kernel_version} 4.9; then
-        return 0
+        return 1
     else
         return 1
     fi
