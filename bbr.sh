@@ -131,7 +131,7 @@ get_latest_version() {
 
     kernel_arr=()
     for i in ${latest_version[@]}; do
-        if version_ge $i 4.14; then
+        if version_ge $i 4.9; then
             kernel_arr+=($i);
         fi
     done
@@ -366,7 +366,7 @@ install_bbr() {
     fi
 
     install_config
-    sysctl_config
+    # 注释掉, Kernel changing only.   sysctl_config
     reboot_os
 }
 
