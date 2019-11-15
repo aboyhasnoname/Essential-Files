@@ -437,7 +437,7 @@ install_docker(){
     service docker start
     echo "Start Docker-Compose "
     docker-compose pull
-    docker-compose up -d [Docker-compose up -d] 
+    docker-compose up -d
     echo
     echo -e "Congratulations, V2ray server install completed!"
     echo
